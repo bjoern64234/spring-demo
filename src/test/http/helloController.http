@@ -1,0 +1,2 @@
+### Get sayHello
+GET {{localhost}}:{{port}}/api/hello
