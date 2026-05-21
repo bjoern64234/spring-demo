@@ -1,9 +1,6 @@
 package org.example.springdemo;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
 
@@ -30,5 +27,10 @@ public class HelloController {
     @GetMapping("/messages")
     public Map<String, Message> getMessages() {
         return this.helloService.getMessages();
+    }
+
+    @PostMapping("/messages")
+    public void saveMassage(@RequestBody Message message) {
+        this.helloService.getMessages().put(message.id(), message);
     }
 }

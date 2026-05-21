@@ -6,3 +6,13 @@ GET {{localhost}}:{{port}}/api/hello/John
 
 ### Get all messages
 GET {{localhost}}:{{port}}/api/messages
+
+### Post a message
+POST {{localhost}}:{{port}}/api/messages
+Content-Type: application/json
+
+{
+  "id": "{{$uuid}}",
+  "name": "We are all students of the course",
+  "message": "Lorem ispum ..."
+}
