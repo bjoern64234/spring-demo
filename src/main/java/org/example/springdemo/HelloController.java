@@ -33,4 +33,9 @@ public class HelloController {
     public void saveMassage(@RequestBody Message message) {
         this.helloService.getMessages().put(message.id(), message);
     }
+
+    @DeleteMapping("/message/{id}")
+    public void deleteMessage(@PathVariable String id) {
+        this.helloService.getMessages().remove(id);
+    }
 }

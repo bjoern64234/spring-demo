@@ -16,3 +16,6 @@ Content-Type: application/json
   "name": "We are all students of the course",
   "message": "Lorem ispum ..."
 }
+
+### Delete a messge
+DELETE {{localhost}}:{{port}}/api/message/06d8c6fb-1daf-408b-b5be-0e3bd27925fa
