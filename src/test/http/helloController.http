@@ -1,2 +1,8 @@
 ### Get sayHello
 GET {{localhost}}:{{port}}/api/hello
+
+### Get sayHello with name
+GET {{localhost}}:{{port}}/api/hello/John
+
+### Get all messages
+GET {{localhost}}:{{port}}/api/messages
